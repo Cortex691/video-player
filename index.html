@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="player">
+        <video
+            src="https://rr5---sn-25glen7r.googlevideo.com/videoplayback?expire=1642563458&ei=IjPnYf6tIaKJvdIPiPayoAM&ip=154.95.39.15&id=o-AIxToTYqAmeLw22wZ-KVKf90q7CQnXVFJQBEqzjrVXR2&itag=22&source=youtube&requiressl=yes&mh=iz&mm=31%2C29&mn=sn-25glen7r%2Csn-25ge7nsd&ms=au%2Crdu&mv=m&mvi=5&pl=24&initcwndbps=685000&vprv=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=124.064&lmt=1640972958463100&mt=1642541599&fvip=5&fexp=24001373%2C24007246&c=ANDROID&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgB1UYNzsa6D7q6IzscPzAFOr9125l5CJZWA3vpD6x3-ECIQCe-DaWYjAZE7UtiubaVnQL0SXJV0MSqaBr3ncAgthcVg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRgIhAIkAhgeK1nYFO4jnobQQNlu8QT-XMDDORTxdes9ozHNfAiEA4kkMSTtx6n0cF6jHbrg34xf3Dae9iCriQPjdZgC9lE0%3D&title=Y2Mate.is%20-%20globe-trotter%20by%20le%20FLEUR-yGPGK_wOOVM-720p-1642541859055"
+            class="vide" playsinline></video>
+        Show Controls
+        <div class="show-controls">
+            <!-- Controls Container -->
+            <div class="controls-container">
+                <div class="progress-range" title="Seek">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="control-group">
+                    <div class="controls-left">
+                        <div class="play-controls">
+                            <i class="fas fa-play" title="Play" id="play-btn"></i>
+                        </div>
+                        <div class="volume">
+                            <div volume-icon>
+                                <i class="fas fa-volume-up" title="Mute" id="volume-icon"></i>
+                            </div>
+                            <div class="volume-range" title="Change Volume">
+                                <div class="volume-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls-right">
+                        <div class="speed" title="Playback Rate">
+                            <select name="playbackRate" class="player-speed">
+                                <option value="0.5">0.5x</option>
+                                <option value="0.75">0.75x</option>
+                                <option value="1" selected>1x</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                        <div class="time">
+                            <span class="time-elapsed">00:00 /</span>
+                            <span class="time-duration">2:38</span>
+                        </div>
+                        <div class="fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
